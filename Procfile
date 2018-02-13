@@ -1,0 +1,1 @@
+web: gunicorn RECAPP.wsgi --log-file -
