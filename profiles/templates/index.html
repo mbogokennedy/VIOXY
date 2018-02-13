@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% load static %}
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RECAPP|WELCOME</title>
+    {% endblock %}
+    <link rel="stylesheet" type="text/css" href="{% static 'static/main.css' %}" />
+</head>
+<body>
+    {% block content%}
+    <showcase id="showcase">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 offset-md-4">
+                    <a href="{% url 'post' %}" style="border-radius:20px" class='btn btn-lg btn-primary'>ADD A PROPERTY</a>
+                </div>
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-8 offset-md-2">                   
+                    <div class="showcase-content">
+                        <h1 class="text-center">Welcome to <span class="primary-text">VIOXY</span></h1>
+                        <p class="text-center">The Best Free Cancer Enlightment Platform in Africa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </showcase>
+    <showcase id="features">
+        <div class="container">
+            <!-- icon row 1 -->
+            <div class="row align-items-center">
+                <div class="col">
+                    
+                    <h2 class="text-center">Our Program</h2>
+                    <p class="text-center">This is what we do</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg- col-xl-4">
+                             <i class="fa fa-question-circle-o"></i><br>
+                            <h3 class="text-center">Free Support</h3>
+                            <p class="lead" class="text-justifed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit nam, et suscipit consequatur inventore iste magnam sapiente, aliquid veritatis dolore deserunt autem dignissimos mollitia esse laudantium ipsum voluptates</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            <i class="fa fa-dashboard"></i><br>
+                            <h3 class="text-center">Fully Upgrade</h3>
+                            <p class="lead" class="text-justifed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit nam, et suscipit consequatur inventore iste magnam sapiente, aliquid veritatis dolore deserunt autem dignissimos mollitia esse laudantium ipsum voluptates</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            <i class="fa fa-rocket"></i><br>
+                            <h3 class="text-center">Fully Optimized</h3>
+                            <p class="lead" class="text-justifed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit nam, et suscipit consequatur inventore iste magnam sapiente, aliquid veritatis dolore deserunt autem dignissimos mollitia esse laudantium ipsum voluptates</p>
+                        </div>
+                    </div>
+                    <!-- icon row 2 -->
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            <i class="fa fa-line-chart"></i><br>
+                            <h3class="text-center">UpTime Upgrade</h3>
+                            <p class="lead" class="text-justifed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit nam, et suscipit consequatur inventore iste magnam sapiente, aliquid veritatis dolore deserunt autem dignissimos mollitia esse laudantium ipsum voluptates</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            <i class="fa fa-users"></i><br>
+                            <h3 class="text-center">Mult-user</h3>
+                            <p class="lead" class="text-justifed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit nam, et suscipit consequatur inventore iste magnam sapiente, aliquid veritatis dolore deserunt autem dignissimos mollitia esse laudantium ipsum voluptates</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            <i class="fa fa-plug"></i><br>
+                            <h3 class="text-center">Plug and Play</h3>
+                            <p class="lead" class="text-justifed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit nam, et suscipit consequatur inventore iste magnam sapiente, aliquid veritatis dolore deserunt autem dignissimos mollitia esse laudantium ipsum voluptates</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </showcase>
+    {% endblock %}
+    
+</body>
+</html>

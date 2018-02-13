@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block head %}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>RECAPP|CONTACT</title>
+{% endblock %}
+{% block  content%}
+{% if confirm_message %}
+  <p>{{ confirm_message }}</p>
+{% endif %}
+
+<div class="container">
+  <div class="row">
+    <div class= "col-md-4 offset-3">
+        {% load crispy_forms_tags %}
+        <h1>{{ title }}</h1>
+        {% if form %}
+          <form class="form-label-group" action="" method="POST"> {% csrf_token %}
+          {{ form|crispy }}
+          <button class="btn btn-lg btn-primary btn-block" type="submit">submit</button>
+          <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>  
+          </form>
+        {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock  %}
+
+ 

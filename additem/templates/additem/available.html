@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row align-items-center offset-md-3" style="text-align:center">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h2>These are the Available Properties</h2>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg- col-xl-4">
+        </div>
+    </div>
+</div>
+{% for a in additem %}
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg- col-xl-4">
+            <h3>{{ a.business_name }}</h3>
+            <p>{{ a.description }}</p>
+            <p>{{ a.contact }}</p>
+            <p>{{ a.date_added }}</p>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}

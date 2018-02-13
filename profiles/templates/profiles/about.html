@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RECAPP|ABOUT</title>
+    {% endblock %}
+    <link rel="stylesheet" type="text/css" href="{% static 'static/style.css' %}" />
+</head>
+<body>
+    {% block content%}
+    <showcase id="subheader">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <h1>About</h1>                   
+                </div>
+            </div>
+        </div>
+        </showcase>
+        <showcase id="page" class="about">
+            <div class="container">
+                <!-- icon row 1 -->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">                                         
+                        <h2>Who we are</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quo necessitatibus ducimus architecto sunt alias expedita, voluptas et obcaecati aperiam porro id recusandae veniam natus, non tempore? Quae, ipsa architecto!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit nam, et suscipit consequatur inventore iste magnam sapiente, aliquid veritatis dolore deserunt autem dignissimos mollitia esse laudantium ipsum voluptates</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <!-- icon row 1 -->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">                                         
+                        <h2>What we do</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quo necessitatibus ducimus architecto sunt alias expedita, voluptas et obcaecati aperiam porro id recusandae veniam natus, non tempore? Quae, ipsa architecto!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit nam, et suscipit consequatur inventore iste magnam sapiente, aliquid veritatis dolore deserunt autem dignissimos mollitia esse laudantium ipsum voluptates</p>
+                        </div>
+                    </div>
+                </div>
+        </showcase>>
+    {% endblock %}
+    
+</body>
+</html>
