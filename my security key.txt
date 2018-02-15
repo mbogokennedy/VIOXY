@@ -1,0 +1,1 @@
+SECRET_KEY = 'es@e3#6u(21gasu2u%z1+5d2kru^n24b$czw5n6rw1n7_o_p=i'
