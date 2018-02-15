@@ -9,6 +9,9 @@
         <meta name="keyword" content="Fighting or Fight, Cancer, Africa, Kenya, Cancer Centers ">
         <meta name="Author" content="Kennedy Mbogo">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+            VIOXY|WELCOME
+        </title>
         {% endblock %}
         {% load static %}
         <link rel="stylesheet" type="text/css" href="{% static 'static/css/main.css' %}"/>
@@ -29,7 +32,7 @@
                             {% url 'index' as index %}
                             {% url 'about' as about %}
                             {% url 'contact' as contact %}
-                            <ul class="pull-left">
+                            <ul class="pull-right">
                                     <li class="nav-item" {% if request.path == index %} class="current"{% endif%}><a href="{% url 'index' %}">Home</a></li>
                                     <li class="nav-item" {% if request.path == about %} class="current"{% endif%}><a href="{% url 'about' %}">About</a></li>
                                     <li class="nav-item" {% if request.path == contact %} class="current"{% endif%}><a href="{% url 'contact' %}">Contact</a></li>
@@ -39,11 +42,20 @@
                                     <li> Hi {{ user.get_username }}: </li>
                                     <li class="pull-right"><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>   
                                 {% else %}
-                                    <li><a href="{% url 'login'%}?next={{request.path}}">Login</a></li>   
+                                    <li class="pull-right"><a href="{% url 'login'%}?next={{request.path}}">Login</a></li>   
                                 {% endif %}
-                                    <li><a href="{% url 'account_signup' %}">Sign up</a></li>
+                                    <li class="pull-right"><a href="{% url 'account_signup' %}">Sign up</a></li>
                                     
                             </ul>
+                            <span class="open-slide">
+                                <a href="#" onclick="openSlideMenu()">
+                                    <svg width="30" height="30">
+                                        <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                                        <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                                        <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                                    </svg>
+                                </a>
+                            </span>
                         </nav>
                     </div>                  
                 </div>
@@ -104,13 +116,8 @@
         {% endblock %} 
         <script src="{% static 'static/js/jquery-1.9.1.min.js' %}"></script>
         <script src="{% static 'static/js/bootstrap.min.js' %}"></script>
-        <script src="{% static 'js/popover.js' %}"></script>
-        <script src="{% static 'js/corousel.js' %}"></script>
-        <script src="{% static 'js/collapse.js' %}"></script>
-        <script src="{% static 'js/dropdown.js' %}"></script>
-        <script src="{% static 'js/util.js' %}"></script>
-        <script src="{% static 'js/button.js' %}"></script>
-        <script src="{% static 'js/bootstrap.js' %}"></script>
+        <script src="{% static 'static/js/main.js' %}"></script>        
+        <script src="{% static 'static/js/bootstrap.js' %}"></script>
     </body>
 
 </html>
